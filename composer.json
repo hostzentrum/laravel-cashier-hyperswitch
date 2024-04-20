@@ -15,7 +15,8 @@
     ],
     "homepage": "https://github.com/mollie/laravel-cashier-mollie",
     "license": [
-        "proprietary, MIT"
+        "proprietary",
+        "MIT"
     ],
     "authors": [
         {
