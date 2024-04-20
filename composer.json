@@ -1,78 +1,83 @@
 {
-  "name": "mollie/laravel-cashier-mollie",
-  "description": "Laravel Cashier provides an expressive, fluent interface to Mollie's subscription billing services.",
-  "keywords": [
-    "mollie",
-    "laravel",
-    "subscriptions",
-    "recurring",
-    "billing",
-    "SEPA",
-    "Apple Pay",
-    "credit card",
-    "debit card",
-    "Europe"
-  ],
-  "homepage": "https://github.com/mollie/laravel-cashier-mollie",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Mollie.com",
-      "email": "support@mollie.com",
-      "homepage": "https://www.mollie.com",
-      "role": "Owner"
-    },
-    {
-      "name": "Sander van Hooft",
-      "email": "sander@sandorian.com",
-      "homepage": "https://www.sandorian.com",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": "^8.1",
-    "ext-json": "*",
-    "ext-intl": "*",
-    "dompdf/dompdf": "^2.0",
-    "illuminate/database": "^10|^11",
-    "illuminate/support": "^10|^11",
-    "mollie/laravel-mollie": "^3.0",
-    "mollie/mollie-api-php": "^2.65",
-    "moneyphp/money": "^4.1",
-    "nesbot/carbon": "^2.72|^3.0"
-  },
-  "require-dev": {
-    "guzzlehttp/guzzle": "^7.0",
-    "mockery/mockery": "^1.4",
-    "orchestra/testbench": "^8.0|^9.0",
-    "phpunit/phpunit": "^10.0"
-  },
-  "autoload": {
-    "files": [
-      "src/Helpers/helpers.php"
+    "name": "hostzentrum/laravel-cashier-hyperswitch",
+    "description": "Laravel Cashier provides an expressive, fluent interface to Hyperswitch's subscription billing services.",
+    "keywords": [
+        "hyperswitch",
+        "laravel",
+        "subscriptions",
+        "recurring",
+        "billing",
+        "SEPA",
+        "Apple Pay",
+        "credit card",
+        "debit card",
+        "Europe"
     ],
-    "psr-4": {
-      "Laravel\\Cashier\\": "src"
+    "homepage": "https://github.com/mollie/laravel-cashier-mollie",
+    "license": [
+        "proprietary, MIT"
+    ],
+    "authors": [
+        {
+            "name": "host-zentrum.de",
+            "email": "info@hostzentrum.com",
+            "homepage": "https://host-zentrum.de",
+            "role": "Owner"
+        },
+        {
+            "name": "Leon Adomaitis",
+            "role": "Developer"
+        },
+        {
+            "name": "Sander van Hooft",
+            "email": "sander@sandorian.com",
+            "homepage": "https://www.sandorian.com",
+            "role": "Original Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "dompdf/dompdf": "^2.0",
+        "illuminate/database": "^10|^11",
+        "illuminate/support": "^10|^11",
+        "hostzentrum/laravel-hyperswitch": "v1.0",
+        "moneyphp/money": "^4.1",
+        "nesbot/carbon": "^2.72|^3.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.0",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Laravel\\Cashier\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravel\\Cashier\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\Cashier\\CashierServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "./vendor/bin/phpunit tests"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Laravel\\Cashier\\Tests\\": "tests"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Laravel\\Cashier\\CashierServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "stable",
-  "prefer-stable": true,
-  "scripts": {
-    "test": "./vendor/bin/phpunit tests"
-  }
 }

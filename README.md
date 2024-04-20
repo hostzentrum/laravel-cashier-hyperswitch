@@ -1,35 +1,29 @@
-<p align="center">
-  <img src="https://github.com/mollie/laravel-cashier-mollie/assets/7265703/f99a2ef1-0618-42ae-9eb7-d3cc10328fd8" height="200" />
-</p>
+<h1 align="center">Subscription billing with Laravel Cashier for Hyperswitch</h1>
 
-<h1 align="center">Subscription billing with Laravel Cashier for Mollie</h1>
 
-<p align="center">
-  <img src="https://github.com/mollie/laravel-cashier-mollie/assets/7265703/a6cf1db7-c252-43c1-a28d-845f3a0880ba" />
-</p>
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mollie/laravel-cashier-mollie.svg?style=flat-square)](https://packagist.org/packages/mollie/laravel-cashier-mollie)
-[![Github Actions](https://github.com/mollie/laravel-cashier-mollie/workflows/tests/badge.svg)](https://github.com/mollie/laravel-cashier-mollie/actions)
-
-Laravel Cashier provides an expressive, fluent interface to subscriptions using [Mollie](https://www.mollie.com)'s billing services.
+Laravel Cashier provides an expressive, fluent interface to subscriptions using Hyperswitch's billing services.
 
 ## Official Documentation
-Documentation can be found on the [Laravel Cashier Mollie website](https://www.cashiermollie.com/).
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email security@mollie.com instead of using the issue tracker.
+TBD
 
 ## Credits
 
 - [Mollie.com](https://www.mollie.com)
+- Special thanks to [Cashier for Mollie](https://github.com/mollie/laravel-cashier-mollie), which this package is based on.
 - [Sandorian.com](https://www.sandorian.com)
 - [All Contributors](../../contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+This is licensed under the Host-Zentrum EULA [LICENSE](LICENSE.md).
+
+### Forked Project Name
+
+This project is a fork of [LaravelCashierMollie](https://github.com/mollie/laravel-cashier-mollie) which is licensed
+under the MIT License.
+
+### Original License
+
+The original code of this project is licensed under the MIT License. The original license text is included in
+the [LICENSE.old.md](LICENSE.old.md) file for more information.
